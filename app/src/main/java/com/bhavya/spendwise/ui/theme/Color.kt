@@ -2,10 +2,20 @@ package com.bhavya.spendwise.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Core brand palette
+val ForestGreen = Color(0xFF2F3B2F)
+val WarmCream = Color(0xFFF1EEE7)
+val SageGreen = Color(0xFFA8B79B)
+val MutedTerracotta = Color(0xFFC1866B)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// App surfaces and text
+val AppBackground = Color(0xFFF7F5EF)
+val SurfaceWhite = Color(0xFFFFFEFA)
+val PrimaryText = Color(0xFF252A23)
+val SecondaryText = Color(0xFF777B70)
+val DividerColor = Color(0xFFE7E4DA)
+
+// Semantic colors
+val SuccessGreen = Color(0xFF527A55)
+val WarningOrange = Color(0xFFB77A43)
+val ErrorRed = Color(0xFFB6534B)
