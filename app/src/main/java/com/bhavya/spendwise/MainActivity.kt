@@ -5,22 +5,26 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.bhavya.spendwise.presentation.navigation.Screen
 import com.bhavya.spendwise.presentation.navigation.SpendWiseBottomBar
 import com.bhavya.spendwise.presentation.navigation.SpendWiseNavGraph
 import com.bhavya.spendwise.ui.theme.SpendWiseTheme
-import androidx.compose.foundation.layout.padding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
 
         setContent {
@@ -59,7 +63,6 @@ fun SpendWiseApp() {
             navController = navController,
             modifier = Modifier
                 .fillMaxSize()
-                .then(Modifier)
                 .padding(innerPadding)
         )
     }
